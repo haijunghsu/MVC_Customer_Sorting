@@ -1,0 +1,47 @@
+﻿<!--
+   Names: (Team 1-3) Tiara Johnson, HaiJung Hsu, Bailey Coleman, and Ethan Guinn
+   Class: IS 403 Section 1
+   Description: This program tracks the line order of customers and
+                displays the total number of hamburgers each customer
+                has ordered.
+   Date: 9/28/2018
+ -->
+
+<!DOCTYPE html>
+<head>
+    <script>
+        /*JavaScript welcoming the user to the webpage*/
+        alert('Welcome to the Krusty Krab.')
+    </script>
+    <style>
+        /*Styles for table, body, and font*/
+        table, th, td {
+            border: 2px solid black;
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: white;
+        }
+
+    body { background-image: url('../../Content/Image/krabbypatty.jpg'); 
+           background-repeat: repeat; 
+           text-align: center; 
+    }
+    </style>
+</head>
+<body>
+    @{
+        ViewBag.Title = "Index";
+    }
+
+    <h2>Most Valued Customers at the Krusty Krab</h2>
+    @Html.Raw((String)ViewBag.Output)
+</body>
+
+
